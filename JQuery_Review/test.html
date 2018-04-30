@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+	var div=$("div")
+	div.animate({left:'100px'},"fast");
+	div.animate({right:'100px'},"fast");
+	div.animate({left:'50px'},"slow");
+	div.animate({down:'100px'},"slow");
+	var p=$("p");  
+    p.animate({fontSize:'3em'},"fast");
+	p.animate({fontSize:'5em'},"fast");
+	p.animate({fontSize:'1em'},"fast");
+    $("p").hide("slow",function(){
+      alert("alert");
+    });
+  });
+});
+</script>
+</head>
+<body>
+<button>hhh</button>
+<div style="background-color:#dddd00">
+	<p>example</p>
+</div>
+</body>
+</html>
