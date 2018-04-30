@@ -1,0 +1,73 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <style>
+    #main{
+      position: absolute;
+      height: 400px;
+      margin-left: 850px;
+      margin-top: 180px;
+      padding-top: 20px;
+    }
+    p{
+      color: white;
+      padding-left: 20px;
+    }
+    img{
+      width: 30px;
+      height: 30px;
+      float: left;
+    }
+    .push{
+      margin-left: 20px;
+      margin-bottom: 15px;
+      width: 300px;
+      height: 35px;
+      padding-left: 10px;
+    }
+    button{
+      margin-left: 20px;
+      width: 300px;
+      height: 35px;
+    }
+    .button{
+      display: inline-block;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      border: none;
+      box-shadow: 0 9px #999;
+      background-color: #C1BDBC;
+    }
+    .button:hover {
+      background-color: #B4ACAC}
+
+    .button:active {
+      background-color: #797777;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    #back{
+      opacity: 0.7;
+    }
+    /*#p1{
+      color: white;
+      margin-left: 40px;
+    }*/
+  </style>
+  <body>
+    <img src="8.jpg" id="back" style="width:100%; height: 100%"></img>
+    <div id="main">
+      <!--<img src="p3.png"></img>-->
+      <p style="font-size: 1.3em;">Register to our Supermarket</P>
+      <p>Fill in the form below to get instant access:</p>
+
+      <input text="text" class="push" placeholder="What's your username?"><br>
+      <input text="text" class="push" placeholder="What's your password?"><br>
+      <input text="text" class="push" placeholder="What's your emial?"><br>
+      <button id="finish" class="button">Register Now!</button>
+      <!--<p id="p1"><a href="login.html">Remember your account?</a></p>-->
+    </div>
+  </body>
+  </html>
