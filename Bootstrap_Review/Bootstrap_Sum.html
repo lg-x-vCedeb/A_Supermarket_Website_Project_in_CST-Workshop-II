@@ -6,6 +6,9 @@
 		<!--为了让bootstrap开发的网站对移动设备友好，确保适当的绘制和触屏缩放-->
 		<!--device-width 确保在不同屏幕分辨率的设备正常浏览（正确呈现）-->
 		<!--initial-scale=1.0确保网页1:1比例呈现，没有任何缩放（user-scalable=no可以禁用缩放(zooming)功能-->
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<title>The Notes of Studying Bootstrap and JQuery</title>
 	<style type="text/css">/*内嵌式CSS*/
 	.img-responsive	{/*水平居中使用 .center-block*/
@@ -38,7 +41,7 @@
 				<h4>缩写</h4>
 					<p>当鼠标悬停在上面会显示完整文本</p>
 					<abbr title="World Wide Web">WWW</abbr><br>
-					<abbr title="The Study Notes of Bootstrap" class="initialism">SNOB</abbr><br>
+					<abbr title="The Study Notes of Bootstrap" class="initialism">snob</abbr><br><!--.initialism class以小号字体显示在<abbr>元素中的文本，且将小写字母转换成大写字母-->
 					<abbr title="Anbul">A</abbr>
 				<h4>地址(Address)</h4>
 					<address>
@@ -46,7 +49,88 @@
 						<a href="https://github.com/lg-x-vCedeb">https://github.com/lg-x-vCedeb</a>
 					</address>
 				<h4>引用(Blockquote)</h4>
-					<p></p>
+					<p>可以在任意的HTML文本中使用<code>&lt;blockquote&gt;</code><br>可添加<code>&lt;small&gt;</code>标签来标识引用来源，使用<code>class="pull-right"</code>向右对齐引用</p>
+					<blockquote>
+						The value of a man resides in what he gives and not in what he is capable of receiving.
+						<small>Albert Einstein</small>
+					</blockquote>
+				<h4>列表</h4>
+					<h5>有序列表</h5>
+						<ol>
+							<li>Item 1</li>
+							<li>Item 2</li>
+							<li>Item 3</li>
+							<li>Item 4</li>
+						</ol>
+					<h5>无序列表</h5>
+						<ul>
+							<li>Item 1</li>
+							<li>Item 2</li>
+							<li>Item 3</li>
+							<li>Item 4</li>
+						</ul>
+					<h5>未定义列表</h5>
+						<ul class="list-unstyled">
+							<li>Item 1</li>
+							<li>Item 2</li>
+							<li>Item 3</li>
+							<li>Item 4</li>
+						</ul>
+					<h5>内联列表</h5>
+						<ul class="list-inline">
+							<li>Item 1</li>
+							<li>Item 2</li>
+							<li>Item 3</li>
+							<li>Item 4</li>
+						</ul>
+					<h5>定义列表</h5>
+						<dl>
+							<dt>Description 1</dt>
+							<dd>Item 1</dd>
+							<dt>Description 2</dt>
+							<dd>Item 2</dd>
+						</dl>
+					<h5>水平定义列表</h5>
+						<dl class="dl-horizontal">
+							<dt>Description 1</dt>
+							<dd>Item 1</dd>
+							<dt>Description 2</dt>
+							<dd>Item 2</dd>
+						</dl>
+				<h4>More and something about <code>&lt;table&gt;</code></h4>
+					<div class="container table-responsive"><!--.table-responsive可以让表格水平滚动以适应小型设备（小于768px）-->
+						<table class="table table-hover table-condensed">
+						<!--.table-hover在表格主体<tbody>内的任一行启用鼠标悬停状态-->
+						<!--.table-condensed让表格更加紧凑-->
+						<!--.table-striped添加斑马线形式的条纹-->
+						<!--.table-bordered为所有表格的单元格添加边框-->
+							<caption>TABLE</caption>
+							<thead><!--表格标题行-->
+								<tr>
+									<td><strong>类</strong></td>
+									<td><strong>描述</strong></td>
+								</tr>
+							</thead>
+							<tbody><!--表格主体-->
+								<tr>
+									<td><code>.text-justify</code></td>
+									<td>设定文本对齐，段落中超出屏幕部分自动换行</td>
+								</tr>
+								<tr>
+									<td><code>.text-nowrap</code></td>
+									<td>段落中超出屏幕部分文字自动换行</td>
+								</tr>
+								<tr>
+									<td><code>.blockquote-reverse</code></td>
+									<td>设定引用右对齐</td>
+								</tr>
+								<tr>
+									<td><code>.pre-scollable</code></td>
+									<td>使<code>&lt;pre&gt;</code>元素可滚动，代码区域最大高度340px，一旦超过，就会在Y轴上出现滚动条</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 		<h2>JQuery</h2>
 	</div>
 
